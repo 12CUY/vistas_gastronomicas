@@ -115,7 +115,7 @@ hr {
 
 /* videos */
 
-.videos {
+.recetas {
   background-color: #fbfdff;
   width: 100%;
   height: 100%;
@@ -123,42 +123,13 @@ hr {
   overflow-y: scroll;
 }
 
-.videos__container {
+.recetas__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.video {
-  width: 310px;
-
-  margin-bottom: 30px;
-}
-
-.video__thumbnail {
-  width: 100%;
-  height: 170px;
-}
-
-.video__thumbnail img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-.author img {
-  object-fit: cover;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-}
-
-.video__details {
-  display: flex;
-  margin-top: 10px;
-}
 
 .title {
   display: flex;
@@ -183,7 +154,6 @@ a{
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  background: #e2b845;
   margin: 2px auto;
   padding: 5px;
 
