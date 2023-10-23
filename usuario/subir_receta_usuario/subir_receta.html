@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- CSS File -->
     <link rel="stylesheet" href="/usuario/subir_receta_usuario/subir_receta_estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Yummyr-rac</title>
 </head>
 <body>
@@ -67,46 +68,92 @@
 
             <!-- categorias -->
             <div class="recetas">
-                <center><h1>Organiza tu receta</h1> </center>
-                <hr>
-            <br>
-                <!-- Formulario de receta -->
-                <div class="recetas__container">
-                  <form>
-                      <div class="form-columns">
-                          <div class="form-column">
-                              <label for="nombre">Nombre de la Receta:</label>
-                              <input type="text" id="nombre" name="nombre" required>
-          
-                              <label for="ingredientes">Ingredientes:</label>
-                              <textarea id="ingredientes" name="ingredientes" rows="4" required>
-                              </textarea>
-                          </div>
-                          <br>
-                          <div class="form-column">
-                              <label for="preparacion">Instrucciones de Preparación:</label>
-                              <textarea id="preparacion" name="preparacion" rows="4" required>
-                              </textarea>
-          
-                              <label for="categoria">Categoría:</label>
-                              <select id="categoria" name="categoria">
-                                  <option value="Entrada">Entrada</option>
-                                  <option value="Plato Principal">Plato Principal</option>
-                                  <option value="Postre">Postre</option>
-                                  <option value="Bebida">Bebida</option>
-                                  <option value="Otro">Otro</option>
-                              </select>
-                          </div>
-                      </div>
+              <center><h1>Receta Estándar de Producción</h1></center>
+              <hr>
+              <br>
+              <!-- Formulario de receta -->
+              <div class="recetas__container">
+                <form class="form-grid">
+                  <!-- Columna 1 -->
+                  <div class="form-column">
+                      <label for="nombreReceta">Nombre de la Receta:</label>
+                      <input type="text" id="nombreReceta" name="nombreReceta" required><br>
+                      <!-- ... Otras etiquetas e inputs para la primera columna ... -->
+                      <label for="areaCocina">Área de Cocina:</label>
+                      <input type="text" id="areaCocina" name="areaCocina">
+      <br>
+                      <label for="utensillos">Utensilios:</label>
+                      <input type="text" id="utensillos" name="utensillos">
+      <br>
+                      <label for="sensibilidad">Sensibilidad:</label>
+                      <input type="text" id="sensibilidad" name="sensibilidad"><br>
+                  </div>
+                  
+                  <!-- Columna 2 -->
+                  <div class="form-column">
+                      <label for="pax">Pax:</label>
+                      <input type="text" id="pax" name="pax">
+                      <!-- ... Otras etiquetas e inputs para la segunda columna ... -->
                       <br>
-                      <center><button type="submit">Guardar Receta</button></center>
-                  </form>
-              </div>
+                      <label for="fecha">Fecha:</label>
+                      <input type="text" id="fecha" name="fecha">
+      <br>
+                      <label for="jornada">Jornada:</label>
+                      <input type="text" id="jornada" name="jornada">
+      <br>
+                      <label for="paralelo">Paralelo:</label>
+                      <input type="text" id="paralelo" name="paralelo"><br>
+                      <label for="nivel">Nivel:</label>
+                      <input type="text" id="nivel" name="nivel">
+                      <br>
+                      <label for="codigo">Código:</label>
+                      <input type="text" id="codigo" name="codigo">
 
-            </div>
+                  </div>
+                  
+                  <!-- Columna 3 -->
+                  <div class="form-column">
+                    <label for="ingredientes">Ingredientes:</label>
+                    <textarea id="ingredientes" name="ingredientes" rows="4"></textarea>
+    <br>
+                    <label for="unidad">Unidad:</label>
+                    <input type="text" id="unidad" name="unidad">
+    <br>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="text" id="cantidad" name="cantidad">
+    <br>
+                    <label for="APP">APP (Mise en Place):</label>
+                    <textarea id="APP" name="APP" rows="4"></textarea>
+    <br>
+                    <label for="CTT">CTT (Procedimiento y Conservación):</label>
+                    <textarea id="CTT" name="CTT" rows="4"></textarea>
+    <br>
+                    <label for="PCCPC">PCC/PC:</label>
+                    <textarea id="PCCPC" name="PCCPC" rows="4"></textarea><br>
+                  </div>
+
+                  <div class="cal">
+                  <hr>
+                  <br>
+                  <label for="foto">Agregar Foto:</label>
+                  <input type="file" id="foto" name="foto">
+                  <br>
+                  <br>
+                  <hr>
+                  </div>
+
+                  <!-- Botones -->
+                  <div class="button-container">
+                      <button type="submit">Guardar</button>
+                      <button type="button">Imprimir</button>
+                      <button type="button">Cancelar</button>
+                  </div>
+              </form>
+              </div>
+          </div>
         </div>
     </div>
 </body>
 
-<script src="/Menu_usuario/funcionalidad_menu.js"></script>
+<script src="/usuario/Menu_usuario/funcionalidad_menu.js"></script>
 </html>
