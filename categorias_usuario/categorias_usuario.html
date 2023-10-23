@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/categorias_usuario/categorias_usuario_estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- Incluimos Font Awesome para los iconos -->
+    <title>Yummyr-rac</title>
+</head>
+<body>
+    <!-- menu_ usuario superior-->
+    <div class="header">
+        <div class="header__left">
+            <i id="menu" class="material-icons">menu</i>
+                <img
+                src="https://i.blogs.es/87930e/comidas-ricas/1366_2000.jpg"
+                alt="" style="padding-left: 20px;padding-right: 20px;border-left-style: solid;border-left-width: 0px;"
+                />
+        </div>
+
+        <div class="header__search">
+            <form action="">
+                <input type="text" placeholder="Buscar Receta" />
+                <button><i class="material-icons">search</i></button>
+            </form>
+        </div>
+
+        <div class="header__icons">
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this" disabled >account_circle</i>
+        </div>
+    </div>
+    <!-- final del menu inferior -->
+
+    <!-- Menu derecho -->
+    <div class="mainBody">
+      <!-- dirreciones de vistas -->
+      <div class="sidebar">
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">home</i>
+            <span ><a href="/Menu_usuario/menu_usuario.html" style="background: none;">Inicio</a></span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">local_fire_department</i>
+            <span ><a href="/subir_receta_usuario/subir_receta.html" style="background: none;">Subir receta</a></span>
+          </div>
+        </div>
+        <hr/>
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">library_add_check</i>
+            <span ><a href="/categorias_usuario/categorias_usuario.html" style="background: none;">Categorias</a></span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">thumb_up</i>
+            <span ><a href="/lo_mejor_usuario/mejor_usuario.html" style="background: none;"> Lo mejor  Recetas </a></span>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <!-- Sidebar Ends -->
+            <!-- categorias -->
+            <div class="videos">
+                <center><h1>Elige tu Categoria de Cocina</h1> </center>
+                <hr>
+            <br>
+                <!-- botones de categoria -->
+                <button class="btn">Botón "".</button>
+    <button class="btn btn-secondary">Botón  "".</button>
+    <button class="btn btn-danger">Botón  "".</button>
+    <button class="btn btn-rounded">Botón  "".</button>
+    <br><br>
+
+    <table>
+      <thead>
+          <tr>
+              <th>Columna 1</th>
+              <th>Columna 2</th>
+              <th>Acciones</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td class="actions">
+                  <i class="fas fa-eye" title="Ver"></i>
+                  <i class="fas fa-print" title="Imprimir"></i>
+                  <i class="fas fa-trash" title="Eliminar"></i>
+              </td>
+          </tr>
+          <tr>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+              <td class="actions">
+                  <i class="fas fa-eye" title="Ver"></i>
+                  <i class="fas fa-print" title="Imprimir"></i>
+                  <i class="fas fa-trash" title="Eliminar"></i>
+              </td>
+          </tr>
+          <!-- Puedes agregar más filas según sea necesario -->
+      </tbody>
+  </table>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+<script src="/Menu_usuario/funcionalidad_menu.js"></script>
+</html>
